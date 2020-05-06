@@ -30,7 +30,7 @@ You will see a message like 'Server started' in the command prompt console.
 
 ### Sanity Test
 Once the server was up and running, let's check out the status by visiting `http://localhost:9200` on your internet browser. This should provide a JSON respone on the browser like the following:
-````JSON
+```JSON
 {
   "name" : "HOMESERVER",
   "cluster_name" : "elasticsearch",
@@ -48,7 +48,7 @@ Once the server was up and running, let's check out the status by visiting `http
   },
   "tagline" : "You Know, for Search"
 }
-````
+```
 Now, let's test the Kibana tool too, as mentioned in the next section.
 
 ### Install Kibana on WindowsOS
@@ -59,10 +59,10 @@ Now, let's test the Kibana tool too, as mentioned in the next section.
 `kibana.bat`
 
 You will see a message like below in the command prompt console.
-````
+```
   log   [12:41:36.302] [info][listening] Server running at http://localhost:5601
   log   [12:41:36.453] [info][server][Kibana][http] http server running at http://localhost:5601
-````
+```
 ![Kibana Web Application ](/images/kibana_command_prompt.png)
 
 ### Sanity Test
@@ -95,7 +95,7 @@ This should respnd with
 }
 ```
 
-The `yellow` status indicates you have no replicas for your shards available. That is, should your Elasticsearch vanishes off, you'll be loosing all the data. Let's see if we can start a new node but on the same machine and using the same binary (you wouldn't do the same on PROD environment though!)
+The status `yellow` indicates you have no replicas for your shards available. That is, should your Elasticsearch vanishes off, you'll be loosing all the data. Let's see if we can start a new node but on the same machine and using the same binary (you wouldn't do the same on PROD environment though!)
 
 ### Starting a Second Node Using the Same Binary
 
@@ -105,6 +105,20 @@ Provide those paths as command line arguments to the script as shown below and e
 
 `elasticsearch -Epath.data=c:\dev\temp\data -Epath.logs=c:\dev\temp\logs`
 
-This will start the additional node in the server 
+This will start the additional node in the server. Let's issue the same cluster health command once again:
+
+```json
+{
+  "cluster_name" : "elasticsearch",
+  "status" : "green",
+  "timed_out" : false,
+  "number_of_nodes" : 2,
+  "number_of_data_nodes" : 2
+  //...
+}
+```
+As the second node was started and joined the existing cluster named `elasticsearch`, the status of the cluster is now `green`
+
+## Elastisearch and Kibana Configuration
 
 
