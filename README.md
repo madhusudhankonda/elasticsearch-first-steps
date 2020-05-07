@@ -113,12 +113,30 @@ This will start the additional node in the server. Let's issue the same cluster 
   "status" : "green",
   "timed_out" : false,
   "number_of_nodes" : 2,
-  "number_of_data_nodes" : 2
-  //...
+  "number_of_data_nodes" : 2,
+  "active_primary_shards" : 17,
+  "active_shards" : 34,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 0,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 100.0
 }
 ```
 As the second node was started and joined the existing cluster named `elasticsearch`, the status of the cluster is now `green`
 
 ## Elastisearch and Kibana Configuration
+
+Going through the configuration of the servers will be helpful.
+
+Open <INSTALL_DIR>/config
+
+## Shards Info
+Let's get information baout our shards. shards Compact and Aligned Text (CAT API)
+GET _cat/shards?v
+
 
 
