@@ -1,12 +1,12 @@
 POST covid_07052020/_bulk
 {"index":{"_index":"covid","_id":1}}
-{"country":"United States of America","date":"2020-05-07","cases":1266434,"deaths":74947}
+{"country":"United States of America","date":"2020-05-07","cases":1349599,"deaths":80101,"recovered":238081,"critical":16816}
 {"index":{"_index":"covid","_id":2}}
-{"country":"United Kingdom","date":"2020-05-07","cases":201101,"deaths":30076}
+{"country":"United Kingdom","date":"2020-05-07","cases":215260,"deaths":31587,"recovered":53972,"critical":1559}
 {"index":{"_index":"covid","_id":3}}
-{"country":"Spain","date":"2020-05-07","cases":"256855","deaths":26070}
+{"country":"Spain","date":"2020-05-07","cases":"264663","deaths":26621,"recovered":176439,"critical":1650}
 {"index":{"_index":"covid","_id":4}}
-{"country":"Italy","date":"2020-05-07","cases":214457,"deaths":29684}
+{"country":"Italy","date":"2020-05-07","cases":218268,"deaths":30395,"recovered":103031,"critical":1034}
 {"index":{"_index":"covid","_id":5}}
 {"country":"France","date":"2020-05-07","cases":174191,"deaths":25809,"recovered":53972,"critical":3147}
 {"index":{"_index":"covid","_id":6}}
