@@ -1,0 +1,21 @@
+POST covid_07052020/_bulk
+{"index":{"_index":"covid","_id":1}}
+{"country":"United States of America","date":"2020-05-07","cases":1266434,"deaths":74947}
+{"index":{"_index":"covid","_id":2}}
+{"country":"United Kingdom","date":"2020-05-07","cases":201101,"deaths":30076}
+{"index":{"_index":"covid","_id":3}}
+{"country":"Spain","date":"2020-05-07","cases":"256855","deaths":26070}
+{"index":{"_index":"covid","_id":4}}
+{"country":"Italy","date":"2020-05-07","cases":214457,"deaths":29684}
+{"index":{"_index":"covid","_id":5}}
+{"country":"France","date":"2020-05-07","cases":174191,"deaths":25809,"recovered":53972,"critical":3147}
+{"index":{"_index":"covid","_id":6}}
+{"country":"Brazil","date":"2020-05-07","cases":156061,"deaths":10656,"recovered":61685,"critical":8318}
+{"index":{"_index":"covid","_id":7}}
+{"country":"Belgium","date":"2020-05-07","cases":53081,"deaths":8656,"recovered":13642,"critical":476}
+{"index":{"_index":"covid","_id":8}}
+{"country":"Germany","date":"2020-05-07","cases":171324,"deaths":7549,"recovered":144400,"critical":1650}
+{"index":{"_index":"covid","_id":9}}
+{"country":"Iran","date":"2020-05-07","cases":107603,"deaths":6640,"recovered":86143,"critical":2675}
+{"index":{"_index":"covid","_id":10}}
+{"country":"Canada","date":"2020-05-07","cases":67702,"deaths":4693,"recovered":31249,"critical":502}
