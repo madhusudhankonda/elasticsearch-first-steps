@@ -1,4 +1,4 @@
-POST covid_07052020/_bulk
+POST covid/_bulk
 {"index":{"_index":"covid","_id":1}}
 {"country":"United States of America","date":"2020-05-07","cases":1266434,"deaths":74947}
 {"index":{"_index":"covid","_id":2}}
