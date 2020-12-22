@@ -21,5 +21,5 @@ POST covid/_bulk
 {"country":"Iran","date":"2020-12-22","cases":1164535,"deaths":53816,"recovered":894366,"critical":5519}
 {"index":{"_index":"covid","_id":11}}
 {"country":"Canada","date":"2020-12-22","cases":515314,"deaths":14332,"recovered":423621,"critical":694}
-{"index":{"_index":"covid","_id":11}}
+{"index":{"_index":"covid","_id":12}}
 {"country”:”Argentina”,”date":"2020-12-22","cases":1547138,"deaths":41997,"recovered":1374401,"critical":3367}
