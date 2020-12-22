@@ -4,7 +4,7 @@ POST covid/_bulk
 {"index":{"_index":"covid","_id":2}}
 {"country":"Brazil","date":"2020-12-22","cases":7264221,"deaths":187322,"recovered":6286980,"critical":8318}
 {"index":{"_index":"covid","_id":3}}
-{"country”:”India,”date":"2020-12-22","cases":10075422,"deaths":146145,"recovered":9636487,"critical":8944}
+{"country":"India","date":"2020-12-22","cases":10075422,"deaths":146145,"recovered":9636487,"critical":8944}
 {"index":{"_index":"covid","_id":4}}
 {"country":"Italy","date":"2020-12-22","cases":1964054,"deaths":69214,"recovered":1281258,"critical":2731}
 {"index":{"_index":"covid","_id":5}}
@@ -14,12 +14,12 @@ POST covid/_bulk
 {"index":{"_index":"covid","_id":7}}
 {"country":"France","date":"2020-12-22","cases":2479151,"deaths":60900,"recovered":184464,"critical":2746}
 {"index":{"_index":"covid","_id":8}}
-{"country”:”Russia”,”date":"2020-12-22","cases":2877727,"deaths":51351,"recovered":2295362,"critical":2300}
+{"country":"Russia","date":"2020-12-22","cases":2877727,"deaths":51351,"recovered":2295362,"critical":2300}
 {"index":{"_index":"covid","_id":9}}
-{"country”:”Mexico”,”date":"2020-12-22","cases":1325915,"deaths":118598,"recovered":987328,"critical":3913}
+{"country":"Mexico","date":"2020-12-22","cases":1325915,"deaths":118598,"recovered":987328,"critical":3913}
 {"index":{"_index":"covid","_id":10}}
 {"country":"Iran","date":"2020-12-22","cases":1164535,"deaths":53816,"recovered":894366,"critical":5519}
 {"index":{"_index":"covid","_id":11}}
 {"country":"Canada","date":"2020-12-22","cases":515314,"deaths":14332,"recovered":423621,"critical":694}
 {"index":{"_index":"covid","_id":12}}
-{"country”:”Argentina”,”date":"2020-12-22","cases":1547138,"deaths":41997,"recovered":1374401,"critical":3367}
+{"country":"Argentina","date":"2020-12-22","cases":1547138,"deaths":41997,"recovered":1374401,"critical":3367}
