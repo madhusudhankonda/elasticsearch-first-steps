@@ -1,0 +1,44 @@
+version: '3'
+services:
+  node1:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.12.1
+    container_name: node1-7.12.1
+    environment:
+      - node.name=node1
+      - cluster.name=elasticsearch-first-steps
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - path.repo=/usr/share/elasticsearch/backups
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - node1-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - elasticsearch-first-steps
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.12.1
+    container_name: kibana-7.12.1
+    environment:
+      - elasticsearch.url=http://elasticsearch:9200
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 5601:5601
+    networks:
+      - elasticsearch-first-steps
+    links:
+      - node1:elasticsearch
+
+volumes:
+  node1-data:
+    driver: local
+
+networks:
+  elasticsearch-first-steps
