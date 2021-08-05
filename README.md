@@ -1,6 +1,7 @@
 # Elasticsearch First Steps
 
 This is the project and resources accompanying the Elasticsearch First Steps Live Online training on O'Reilly.
+Please follow the [wiki pages](https://github.com/madhusudhankonda/elasticsearch-first-steps/wiki) for sample code and accompanying subject matter
 
 # My Elasticsearch in Action book
 My Elasticsearch in Action (second edition) is available for early access: 
