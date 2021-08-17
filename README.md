@@ -3,9 +3,9 @@
 This is the project and resources accompanying the Elasticsearch First Steps Live Online training on O'Reilly.
 Please follow the [wiki pages](https://github.com/madhusudhankonda/elasticsearch-first-steps/wiki) for sample code and accompanying subject matter
 
-# My Elasticsearch in Action book
+# My [Elasticsearch in Action](https://www.manning.com/books/elasticsearch-in-action-second-edition?utm_source=mkonda&utm_medium=affiliate&utm_campaign=book_konda_elasticsearch_7_23_21&a_aid=mkonda&a_bid=edbc50d4) book
 My Elasticsearch in Action (second edition) is available for early access: 
-[Elasticsearch in Action (second edition) Book](https://www.manning.com/books/elasticsearch-in-action-second-edition?utm_source=mkonda&utm_medium=affiliate&utm_campaign=book_konda_elasticsearch_7_23_21&a_aid=mkonda&a_bid=edbc50d4)
+[Elasticsearch in Action](https://www.manning.com/books/elasticsearch-in-action-second-edition?utm_source=mkonda&utm_medium=affiliate&utm_campaign=book_konda_elasticsearch_7_23_21&a_aid=mkonda&a_bid=edbc50d4) (second edition) Book
 
 # Past sessions
 - [05 May 2021](https://learning.oreilly.com/attend/elasticsearch-first-steps/0636920055067/0636920055070)
