@@ -1,8 +1,8 @@
 version: '3'
 services:
   node1:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.12.1
-    container_name: node1-7.12.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.14.1
+    container_name: node1-7.14.1
     environment:
       - node.name=node1
       - cluster.name=elasticsearch-first-steps
@@ -21,8 +21,8 @@ services:
     networks:
       - elasticsearch-first-steps
   kibana:
-    image: docker.elastic.co/kibana/kibana:7.12.1
-    container_name: kibana-7.12.1
+    image: docker.elastic.co/kibana/kibana:7.14.1
+    container_name: kibana-7.14.1
     environment:
       - elasticsearch.url=http://elasticsearch:9200
     ulimits:
@@ -41,4 +41,4 @@ volumes:
     driver: local
 
 networks:
-  elasticsearch-first-steps
+  elasticsearch-first-steps:
