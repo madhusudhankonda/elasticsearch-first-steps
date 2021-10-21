@@ -41,4 +41,4 @@ volumes:
     driver: local
 
 networks:
-  elasticsearch-first-steps
+  elasticsearch-first-steps:
